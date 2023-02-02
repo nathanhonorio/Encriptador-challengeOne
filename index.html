@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <title>Nathan Honório | Challenge One</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <video autoplay loop class="bg_video">
+
+    <source src="assets/bg.mp4" type="video/mp4">
+  </video>	
+  <div class="">
+    <header class="header-bg">
+      <div class="header container">
+        <div>
+          <img class="logo" src="./assets/logo.svg" alt="" />
+        </div>
+        <h1>Encrypt and Decrypt tool</h1>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="in-section">
+        <div class="in-section--container">
+          <textarea id="inText" placeholder="Type your text here...">
+          </textarea>
+
+          <span class="warning">(!) only capital letters and no accent.
+          </span>
+
+          <div class="buttons">
+            <button id="btEncrypt" class="encrypt">
+              Encrypt
+            </button>
+            <button id="btDescrypt" class="descrypt">
+              Descrypt
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="out-section">
+        <div class="out-section--container">
+          <textarea id="outText" class="outText">
+          </textarea>
+          <button id="btCopy" class="btCopy">
+            Copiar
+          </button>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="./js/app.js"></script>
+</body>
+
+</html>
